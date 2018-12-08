@@ -11,3 +11,6 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+      - run:
+          name: Print diff
+          command: git diff --name-status $GIT_PREVIOUS_COMMIT $GIT_COMMIT
